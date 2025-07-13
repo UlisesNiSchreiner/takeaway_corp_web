@@ -1,0 +1,191 @@
+:root {
+  --color-primary: #FFC100;
+}
+
+.video-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.6);
+  z-index: -1;
+}
+
+
+header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 8px;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header .navbar-nav .nav-link,
+header .navbar-brand,
+
+
+/* Navbar links con subrayado animado */
+.nav-link-custom {
+  position: relative;
+  color: white !important;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+/* Botón principal del header */
+.btn-header {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-header:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* Cambios cuando el header tiene la clase 'scrolled' */
+header.scrolled .nav-link-custom {
+  color: #000 !important;
+}
+
+header.scrolled .nav-link-custom::after {
+  background-color: var(--color-primary);
+}
+
+header.scrolled .btn-header {
+  border-color: #000;
+  color: #000;
+}
+
+header.scrolled .btn-header:hover {
+  color: #fff;
+}
+
+
+
+/* Botón Crear cuenta con estilo similar a los links pero más destacado */
+.btn-header {
+  position: relative;
+  background: none;
+  border: none;
+  color: white !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.btn-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.btn-header:hover::after,
+.btn-header.active::after {
+  width: 100%;
+}
+
+header.scrolled .btn-header {
+  color: #000 !important;
+}
+
+header.scrolled .btn-header::after {
+  background-color: var(--color-primary);
+}
+
+.btn-primary-custom {
+  background-color: var(--color-primary) !important;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e6b000 !important; /* un tono más oscuro para hover */
+  color: #000;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+
+.custom-how-btn {
+  border: none !important;
+  color: var(--color-primary) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-how-btn:hover {
+  background-color: white !important;
+  color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+
+.section-call-to-action {
+  background-color: rgba(255, 193, 0, 0.15); /* leve del color primario */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-call-to-action h2 {
+  color: white;
+}
+
+.section-call-to-action .btn-primary-custom {
+  background-color: var(--color-primary);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.section-call-to-action .btn-primary-custom:hover {
+  background-color: #e6b000;
+}
