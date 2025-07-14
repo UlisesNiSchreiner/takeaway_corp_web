@@ -2,6 +2,10 @@
   --color-primary: #FFC100;
 }
 
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
 .video-header {
   position: relative;
   height: 100vh;
