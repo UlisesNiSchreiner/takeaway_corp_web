@@ -54,9 +54,14 @@ const LandingPage: React.FC = () => {
                             <li className="nav-item">
                                 <a className={`nav-link nav-link-custom ${activeSection === 'pricing' ? 'active' : ''}`} href="#pricing">Precios</a>
                             </li>
+                        </ul>
 
+                        <ul className="navbar-nav align-items-center gap-2 ms-lg-4">
                             <li className="nav-item">
-                                <a className="btn btn-header" href="#signup">Crear cuenta</a>
+                                <a className="btn btn-outline-light btn-login" href="/login">INGRESAR</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="btn btn-outline-light btn-header" href="#signup">Crear cuenta</a>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +75,7 @@ const LandingPage: React.FC = () => {
                     Tu navegador no soporta el video.
                 </video>
                 <div className="z-1 position-relative">
-                    <h1 className="display-4 fw-bold">Digitalizá tu menú y gestioná tus pedidos en un solo lugar</h1>
+                    <h1 className="display-4 fw-bold p-3">Digitalizá tu menú y gestioná tus pedidos en un solo lugar</h1>
                     <h5 className="mt-2">Crea un menú online, recibí pedidos por QR o redes y avisá a tus clientes cuando estén listos.</h5>
                     <div className="d-flex gap-3 mt-4 justify-content-center flex-wrap">
                         <a href="#features" className="btn btn-primary-custom px-4 py-2 fw-semibold">Probar gratis</a>
@@ -222,9 +227,9 @@ const LandingPage: React.FC = () => {
                     <p className="mb-2">Seguinos en nuestras redes</p>
                     <div className="d-flex justify-content-center gap-3">
                         <a href="#" aria-label="Instagram" className="text-white"><i className="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="Youtube" className="text-white"><i className="bi bi-youtube"></i></a>
+                        <a href="https://www.youtube.com/@menuclick" aria-label="Youtube" className="text-white"><i className="bi bi-youtube"></i></a>
                     </div>
-                    <p className="mt-3 small">© {new Date().getFullYear()} MiMenu. Todos los derechos reservados.</p>
+                    <p className="mt-3 small">© {new Date().getFullYear()} MenuClick. Todos los derechos reservados.</p>
                 </div>
             </footer>
 
@@ -249,7 +254,7 @@ const LandingPage: React.FC = () => {
                             <iframe
                                 width="100%"
                                 height="315"
-                                src="https://www.youtube.com/embed/jUivUHuD1uw"
+                                src="https://www.youtube.com/embed/Ug8aggRtOps"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
